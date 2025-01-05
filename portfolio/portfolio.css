@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 30px 0px 0px;
+    padding: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+    /* display: flex; */
+    /* height: 2000px; */
+}
+
+
+ul{
+     list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+
+ul li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li:nth-child(3){
+    text-decoration: underline;
+    text-decoration-thickness: 3px ;
+    text-decoration-color: #F5F0CD ;
+}
+
+ul li:nth-child(1), 
+ul li:nth-child(2), 
+ul li:nth-child(4) {
+    color: gray;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    background-color: rgba(10, 10, 10, 0.3);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    height: 60px;
+    margin-bottom: 30px;
+    
+}
+
+.bi-github{
+    margin-left: 400px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bi-github:hover{
+    box-shadow: 0px 0px 40px white;
+}
+
+.name{
+    margin-right: 300px;
+    color: #F5F0CD;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 0px 0px 10px #F5F0CD;
+}
+
+.text-color{
+    color: #F0BB78;
+}
+
+.project {
+    background-color: #1E201E;
+    height: 350px;
+    width: 280px;
+    display: flex;
+    flex-direction: column; /* Susun elemen di dalam div secara vertikal */
+    align-items: center; /* Posisikan elemen di tengah secara horizontal */
+    justify-content: space-between; /* Atur jarak antar elemen di dalam div */
+    border-radius: 25px;
+    padding: 1px; /* Tambahkan padding untuk kenyamanan */
+    margin-bottom: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.past-project {
+    color: white;
+    margin: 0; /* Hilangkan margin bawaan jika ada */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.explore-project {
+    color: white;
+    margin: 0; /* Hilangkan margin bawaan jika ada */
+    margin-top: 10px; /* Tambahkan jarak antar teks jika diperlukan */
+    font-size: 1.3rem; /* Sesuaikan ukuran teks */
+    
+}
+
+
+
+.tools-use{
+    align-self: flex-start;
+    color: #F0BB78;
+    font-family: cursive;
+    padding-bottom: 10px;
+}
+
+.gambar1 {
+    height: 155px;
+    width: auto; /* Sesuaikan lebar berdasarkan rasio gambar */
+    clip-path: inset(17px 0 9px 0);
+}
+
+.judul-project {
+    color: white;
+    text-align: center; /* Agar judul berada di tengah */
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.deskripsi-project {
+    color: white;
+    text-align: justify; /* Rata kanan kiri */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block; /* Menjadikan teks elemen blok */
+    width: 100%; /* Menggunakan lebar penuh dari elemen induk */
+}
+
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Elemen yang tidak muat di baris akan pindah ke bawah */
+    width: 950px; /* Lebar container */
+    justify-content: space-between; /* Atur jarak horizontal antar elemen */
+    margin: auto; /* Pusatkan container */
+    animation: animasiReload 0.6s ease;
+}
+
+
+@keyframes animasiReload{
+    0%{
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.judul {
+    display: flex;
+    flex-direction: column; /* Mengatur arah elemen ke kolom (vertikal) */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    margin-bottom: 40px;
+    margin-top: -10px;
+    animation: animasiReloadjudul 0.3s ease-in-out;
+
+}
+
+@keyframes animasiReloadjudul{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes projectHover{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.03);
+    }
+}
+
+.project {
+    display: inline-block;
+    transition: transform 0.5s ease; /* Tambahkan efek transisi */
+}
+
+.project:hover {
+    transform: scale(1.03); /* Terapkan transformasi permanen selama hover */
+    background-color: rgb(40, 42, 40);
+}

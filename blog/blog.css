@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 30px 0px 0px;
+    padding: 0;
+    background-color: #0a0a0a;
+    /* background-color: green; */
+    /* height: 2000px; */
+}
+
+ul{
+     list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+
+ul li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li:nth-child(4){
+    text-decoration: underline;
+    text-decoration-thickness: 3px ;
+    text-decoration-color: #F5F0CD ;
+}
+
+ul li:nth-child(1), 
+ul li:nth-child(2), 
+ul li:nth-child(3) {
+    color: gray;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(10, 10, 10, 0.3);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    height: 60px;
+    
+}
+
+.bi-github{
+    margin-left: 400px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bi-github:hover{
+    box-shadow: 0px 0px 40px white;
+}
+
+.name{
+    margin-right: 300px;
+    color: #F5F0CD;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 0px 0px 10px #F5F0CD;
+}
+
+.content{
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-left: 100px;
+    /* height: 1000px; */
+    width: 800px;
+    padding: 10px;
+}
+
+.text-color{
+    color: #dab88d;
+}
+
+.text-content{
+color: white;
+/* border: 1px solid white; */
+border-bottom: 1px solid white;
+width: 250px;
+font-size: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transform: translate(950px);
+position: absolute;
+top: 20%;
+padding-bottom: 16px;
+}
+
+.isi-konten{
+    border: 3px solid gray;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+    
+}
+
+.tanggal{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.judul{
+    color: green;
+    font-family: sans-serif;
+}
+.isi{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+@keyframes isiKontenHover{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.001);
+    }
+}
+
+
+.isi-konten:hover {
+    transform: scale(1.03); /* Terapkan transformasi permanen selama hover */
+    background-color: rgb(40, 42, 40);
+}
+
+
+#btn button{
+    margin-top: 20px;
+    background-color: #4c6897;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#btn button:hover{
+    background-color: #213555;
+}
+
+#exampleModal{
+    color: white
+}
+
+#exampleModal .modal-content{
+    background-color: #2A3335;
+}
+
+#exampleModal input{
+    outline: none;
+    border-radius: 5px;
+}
+
+#exampleModal textarea{
+    resize: none;
+    outline: none;
+    margin-top: 20px;
+    width: 460px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#exampleModal textarea,
+#exampleModal input{
+    background-color: #252222;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.card{
+    margin-bottom: 20px;
+    background-color: #2A3335;
+    color: white;
+}

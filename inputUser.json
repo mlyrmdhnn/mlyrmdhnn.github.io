@@ -1,0 +1,16 @@
+{
+    "input-user" : [
+        {
+            "tittle" : "Belajar py",
+            "description" : "Bahasa pemrograman yg pertama kali saya gunakan adalah bahasa python"
+        },
+        {
+            "tittle" : "Belajar Web Dev",
+            "description" : "Sehabis belajar bahasa python, lalu saya lanjut belajar Web Dev"
+        },
+        {
+            "tittle" : "Hal yg sudah di pelajari",
+            "description" : "Saya sudah belajar HTML, CSS, Dan JS Advanced"
+        }
+    ]
+}
